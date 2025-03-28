@@ -1,0 +1,19 @@
+<%- include('./partials/gameHeader') %>
+<p>
+  class BrokenClass: &emsp; def __init__(self, param):<br />
+  &emsp; self.param = param<br />
+  &emsp; self.extra = "Noise" * 10 # Fake complexity<br />
+  &emsp; def get_value(self):<br />
+  &emsp; return self.param + 5 # TypeError<br />
+</p>
+        <div>
+          <form>
+            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required>
+            <input type="hidden" name="codeId" value="10">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

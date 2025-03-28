@@ -1,0 +1,23 @@
+<%- include('./partials/gameHeader') %>
+<p>
+  def function8(param):<br />
+  &emsp; result = [param]<br />
+  &emsp; def worker():<br />
+  &emsp; &emsp; time.sleep(0.1)<br />
+  &emsp; &emsp; result.append("".join(reversed(param)))<br />
+  &emsp; t = threading.Thread(target=worker)<br />
+  &emsp; t.start()<br />
+  &emsp; t.join()<br />
+  &emsp; return result[-1]<br />
+</p>
+        <div>
+          <form>
+            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required>
+            <input type="hidden" name="codeId" value="8">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

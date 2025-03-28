@@ -1,0 +1,19 @@
+<%- include('./partials/gameHeader') %> 
+<p>
+  def function6(param, depth=0):<br />
+    &emsp; if depth > 10:<br />
+        &emsp; &emsp; return param<br />
+    &emsp; scrambled = param[::-1] + str(depth)  # Fake transformation<br />
+    &emsp; return function6(scrambled, depth + 1)  # Infinite loop risk<br />
+</p>
+        <div>
+          <form>
+            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required>
+            <input type="hidden" name="codeId" value="6">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

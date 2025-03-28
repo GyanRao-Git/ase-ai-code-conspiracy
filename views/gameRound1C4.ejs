@@ -1,0 +1,19 @@
+<%- include('./partials/gameHeader') %> 
+<p>
+  def function4(param):<br />
+    &emsp; v = int(param, 16)<br />
+    &emsp; fake = sum(range(10)) * v  # Fake usage<br />
+    &emsp; final = (v >> 2) ^ 1234  # Misleading operation<br />
+    &emsp; return bin(final) + param[:10]  # Incorrect slicing<br />
+</p>
+        <div>
+          <form>
+            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required>
+            <input type="hidden" name="codeId" value="4">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
