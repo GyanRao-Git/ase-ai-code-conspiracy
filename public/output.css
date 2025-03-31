@@ -628,11 +628,6 @@ video {
   margin-right: 0.75rem;
 }
 
-.mx-10{
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -645,36 +640,16 @@ video {
   margin-bottom: 1rem;
 }
 
+.ml-10{
+  margin-left: 2.5rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
 
-.ml-5{
-  margin-left: 1.25rem;
-}
-
-.mb-3{
-  margin-bottom: 0.75rem;
-}
-
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.mt-9{
-  margin-top: 2.25rem;
-}
-
-.mt-1{
-  margin-top: 0.25rem;
-}
-
 .mt-16{
   margin-top: 4rem;
-}
-
-.ml-10{
-  margin-left: 2.5rem;
 }
 
 .flex{
@@ -703,6 +678,30 @@ video {
 
 .w-\[220px\]{
   width: 220px;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[800\]{
+  width: 800;
+}
+
+.w-\[800px\]{
+  width: 800px;
+}
+
+.w-\[px\]{
+  width: px;
+}
+
+.w-\[600px\]{
+  width: 600px;
+}
+
+.w-\[500px\]{
+  width: 500px;
 }
 
 .flex-col{
@@ -775,10 +774,6 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.text-center{
-  text-align: center;
-}
-
 .font-glitch{
   font-family: Rubik Glitch, cursive;
 }
@@ -795,6 +790,11 @@ video {
   font-family: Sixtyfour, sans-serif;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
@@ -808,11 +808,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold{

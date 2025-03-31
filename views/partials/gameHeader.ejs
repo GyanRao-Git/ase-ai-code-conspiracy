@@ -16,16 +16,16 @@
           const codeId = form.codeId.value;
 
           const redirects = {
-            1: { c1: "gameRound1C2" },
-            2: { c2: "gameRound1C3" },
-            3: { c3: "gameRound1C4" },
-            4: { c4: "gameRound1C5" },
-            5: { c5: "gameRound1C6" },
-            6: { c6: "gameRound1C7" },
-            7: { c7: "gameRound1C8" },
-            8: { c8: "gameRound1C9" },
-            9: { c9: "gameRound1C10" },
-            10: { c10: "gameRound2" },
+            1: { c1: "gameRound1C2-70e6f204-e56a-4152-a79d-85be53e9cc58" },
+            2: { c2: "gameRound1C3-404bb812-ef4b-43d4-b1c5-97dcaccdc159" },
+            3: { c3: "gameRound1C4-f8f6f03c-defc-41f9-8d33-36aea2591089" },
+            4: { c4: "gameRound1C5-84abcf18-ed66-44a4-800c-a66f6690df1a" },
+            5: { c5: "gameRound1C6-d05c1b80-bb4e-43d1-8c0c-e0da1d5868ea" },
+            6: { c6: "gameRound1C7-8ef4f355-b1b3-4dad-a096-784704fdcfe8" },
+            7: { c7: "gameRound1C8-289f4e4d-4c88-4d9c-9053-07eb5dbf792f" },
+            8: { c8: "gameRound1C9-2d40d4b6-c31b-4f66-bcc6-70a306589dea" },
+            9: { c9: "gameRound1C10-3f6c7e64-08c7-4279-bbf8-00b144fef3b3" },
+            10: { c10: "gameRound2-244c7e5c-2614-4d51-8c50-79cad1202121" },
           };
 
           if (redirects[codeId] && redirects[codeId][secretCode]) {
@@ -38,14 +38,21 @@
     </script>
   </head>
   <body class="bg-black">
-    <div class=" container min-h-screen flex flex-col items-center justify-center">
+    <div
+      class="container min-h-screen flex flex-col items-center justify-center"
+    >
       <div>
         <header>
-        <h1 class="text-indigo-400 text-xl bg-gray-700 rounded-md p-2 mb-4 font-bold
-        ">Round <%= roundNumber %> Extract CodeWord</h1>
-      </header>
+          <h1
+            class="text-indigo-400 text-xl bg-gray-700 rounded-md p-2 mb-4 font-bold"
+          >
+            Round <%= roundNumber %> Extract CodeWord
+          </h1>
+        </header>
       </div>
-      <main>
+      <main class="w-[600px]">
         <div>
-          <h3 class="text-white  bg-gray-700 rounded-md p-2 mb-1 font-bold">Debug the code below:</h3>
+          <h3 class="text-white bg-gray-700 rounded-md p-2 mb-1 font-bold">
+            Debug the code below:
+          </h3>
         </div>
