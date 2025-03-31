@@ -1,19 +1,24 @@
-<%- include('./partials/gameHeader') %> 
-<p>
-  def function2(param):<br />
-    &emsp; junk = ''.join(random.choices(string.ascii_letters, k=10))  # Distraction<br />
-    &emsp; reverse_code = param[::-1]<br />
-    &emsp; obf = list(reverse_code)<br />
-    &emsp; new_code = obf[10]  # IndexError if param too short<br />
-    &emsp; return hashlib.md5(new_code.encode()).hexdigest()<br />
-</p>
-        <div>
+<%- include('./partials/gameHeader',{roundNumber:2}) %> 
+          <div class="bg-gray-950 flex items-center justify-center rounded-lg ">
+            <pre>
+              <code class="text-green-500 text-sm m-0">
+                def function2(param):
+                &emsp; junk = ''.join(random.choices(string.ascii_letters, k=10)) 
+                &emsp; reverse_code = param[::-1]
+                &emsp; obf = list(reverse_code)
+                &emsp; new_code = obf[10]  
+                &emsp; return hashlib.md5(new_code.encode()).hexdigest
+              </code>
+            </pre>
+          </div>
+          <div class="flex justify-center items-center mb-2">
           <form>
-            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required>
+            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required class="rounded-lg w-[220px] text-black font-bold p-1 py-1 m-1 bg-slate-200">
             <input type="hidden" name="codeId" value="2">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="text-white bg-indigo-400 mx-2 p-2 rounded-lg">
           </form>
         </div>
+      </div>
       </main>
     </div>
   </body>

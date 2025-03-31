@@ -1,21 +1,25 @@
-<%- include('./partials/gameHeader') %> 
-          <p>
-            def function1(param): <br />
-            &emsp; x1 = "Ai" + "Code" + "Conspiracy" <br />
-            &emsp; obf = "Hakuna matata"[::-1]<br />
-            &emsp; if param = x1: <br />
-            &emsp; &emsp; e = base64.b64encode("7G$Fq2".encode()).decode()<br />
-            &emsp; &emsp; return e[::-1] <br />
-            &emsp; return "Error"<br />
-          </p>
-        </div>
-        <div>
+<%- include('./partials/gameHeader',{roundNumber:1}) %> 
+          <div class="bg-gray-950 flex items-center justify-center rounded-lg ">
+            <pre>
+              <code class="text-green-500 text-sm m-0  ">
+            def function1(param): 
+              x1 = "Ai" + "Code" + "Conspiracy" 
+              &emsp; obf = "Hakuna matata"[::-1]
+              &emsp; if param = x1: 
+              &emsp; &emsp; e = base64.b64encode("7G$Fq2".encode()).decode()
+              &emsp; &emsp; return e[::-1] 
+              &emsp; return "Error"
+              </code>
+            </pre>
+          </div>
+          <div class="flex justify-center items-center mb-2">
           <form>
-            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required>
+            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required class="rounded-lg w-[220px] text-black font-bold p-1 py-1 m-1 bg-slate-200">
             <input type="hidden" name="codeId" value="1">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="text-white bg-indigo-400 mx-2 p-2 rounded-lg">
           </form>
         </div>
+      </div>
       </main>
     </div>
   </body>

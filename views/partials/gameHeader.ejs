@@ -3,44 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Round 1 Extract CodeWord</title>
+    <title>Round <%= roundNumber %> Extract CodeWord</title>
+    <link rel="stylesheet" href="/output.css" />
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const form = document.querySelector("form");
 
         form.addEventListener("submit", function (event) {
-          event.preventDefault(); 
+          event.preventDefault();
 
           const secretCode = form.secretCode.value.trim();
           const codeId = form.codeId.value;
 
           const redirects = {
-            "1": { "c1": "gameRound1C2" },
-            "2": { "c2": "gameRound1C3" },
-            "3": { "c3": "gameRound1C4" },
-            "4": { "c4": "gameRound1C5" },
-            "5": { "c5": "gameRound1C6" },
-            "6": { "c6": "gameRound1C7" },
-            "7": { "c7": "gameRound1C8" },
-            "8": { "c8": "gameRound1C9" },
-            "9": { "c9": "gameRound1C10" },
-            "10": { "c10": "gameRound2" },
+            1: { c1: "gameRound1C2" },
+            2: { c2: "gameRound1C3" },
+            3: { c3: "gameRound1C4" },
+            4: { c4: "gameRound1C5" },
+            5: { c5: "gameRound1C6" },
+            6: { c6: "gameRound1C7" },
+            7: { c7: "gameRound1C8" },
+            8: { c8: "gameRound1C9" },
+            9: { c9: "gameRound1C10" },
+            10: { c10: "gameRound2" },
           };
 
           if (redirects[codeId] && redirects[codeId][secretCode]) {
             window.location.href = redirects[codeId][secretCode];
           } else {
-            alert("Invalid secret code. Please try again.");
+            alert("INVALID CODE, TRY AGAIN! ");
           }
         });
       });
     </script>
   </head>
-  <body>
-    <div>
-      <header>
-        <h1>Round 1 Extract CodeWord</h1>
+  <body class="bg-black">
+    <div class=" container min-h-screen flex flex-col items-center justify-center">
+      <div>
+        <header>
+        <h1 class="text-indigo-400 text-xl bg-gray-700 rounded-md p-2 mb-4 font-bold
+        ">Round <%= roundNumber %> Extract CodeWord</h1>
       </header>
+      </div>
       <main>
         <div>
-          <h3>Debug the code below:</h3>
+          <h3 class="text-white  bg-gray-700 rounded-md p-2 mb-1 font-bold">Debug the code below:</h3>
+        </div>

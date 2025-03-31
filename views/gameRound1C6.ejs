@@ -1,18 +1,23 @@
-<%- include('./partials/gameHeader') %> 
-<p>
-  def function6(param, depth=0):<br />
-    &emsp; if depth > 10:<br />
-        &emsp; &emsp; return param<br />
-    &emsp; scrambled = param[::-1] + str(depth)  # Fake transformation<br />
-    &emsp; return function6(scrambled, depth + 1)  # Infinite loop risk<br />
-</p>
-        <div>
+<%- include('./partials/gameHeader',{roundNumber:6}) %> 
+          <div class="bg-gray-950 flex items-center justify-center rounded-lg ">
+            <pre>
+              <code class="text-green-500 text-sm m-0">
+                def function6(param, depth=0):
+                &emsp; if depth > 10:
+                &emsp; &emsp; return param
+                &emsp; scrambled = param[::-1] + str(depth)  
+                &emsp; return function6(scrambled, depth + 1) 
+              </code>
+            </pre>
+          </div>
+          <div class="flex justify-center items-center mb-2">
           <form>
-            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required>
+            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required class="rounded-lg w-[220px] text-black font-bold p-1 py-1 m-1 bg-slate-200">
             <input type="hidden" name="codeId" value="6">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="text-white bg-indigo-400 mx-2 p-2 rounded-lg">
           </form>
         </div>
+      </div>
       </main>
     </div>
   </body>

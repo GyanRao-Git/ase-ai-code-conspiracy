@@ -4,18 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= pageTitle %></title>
+  <!---<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/output.css">
 </head>
-<body>
-    <div>
+<body class="bg-black">
+    <div class=" min-h-screen flex flex-col justify-center items-center">
       <header>
-        <h1>
-          Welcome to AI CODE CONSPIRACY! 
+        <img src="/ase-logo.jpg" alt="ASE Club logo" class="absolute top-0 left-0 w-24 h-auto mx-3">
+        <h1 class=" flex-col justify-center rounded-lg text-indigo-400 p-3 text-6xl font-serif font-bold shadow-lg">
+        &emsp; &emsp;  Welcome to <br><span class="font-glitch font-light ">AI CODE CONSPIRACY </span>
         </h1>
       </header>
       <main>
-        <div>
-          <a href="/game">START GAME</a>
-          <a href="/rules">View Rules</a>
+        <div class="mt-10 flex gap-8">
+          <a href="/game" class="bg-indigo-400 rounded-2xl p-3 text-xl font-bold shadow-md font-sixtyfour">START</a>
+          <a href="/rules" class="bg-indigo-400 rounded-2xl p-3 text-xl font-bold shadow-md font-sans">View Rules</a>
         </div>
       </main>
     </div>
