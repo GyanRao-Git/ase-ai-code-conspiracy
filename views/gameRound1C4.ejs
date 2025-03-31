@@ -1,18 +1,23 @@
-<%- include('./partials/gameHeader') %> 
-<p>
-  def function4(param):<br />
-    &emsp; v = int(param, 16)<br />
-    &emsp; fake = sum(range(10)) * v  # Fake usage<br />
-    &emsp; final = (v >> 2) ^ 1234  # Misleading operation<br />
-    &emsp; return bin(final) + param[:10]  # Incorrect slicing<br />
-</p>
-        <div>
+<%- include('./partials/gameHeader',{roundNumber:4}) %> 
+          <div class="bg-gray-950 flex items-center justify-center rounded-lg ">
+            <pre>
+              <code class="text-green-500 text-sm m-0">
+                def function4(param):
+                &emsp; v = int(param, 16)
+                &emsp; fake = sum(range(10)) * v  # Fake usage
+                &emsp; final = (v >> 2) ^ 1234  # Misleading operation
+                &emsp; return bin(final) + param[:10]  
+              </code>
+            </pre>
+          </div>
+          <div class="flex justify-center items-center mb-2">
           <form>
-            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required>
+            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required class="rounded-lg w-[220px] text-black font-bold p-1 py-1 m-1 bg-slate-200">
             <input type="hidden" name="codeId" value="4">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="text-white bg-indigo-400 mx-2 p-2 rounded-lg">
           </form>
         </div>
+      </div>
       </main>
     </div>
   </body>

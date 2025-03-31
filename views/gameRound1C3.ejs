@@ -1,21 +1,25 @@
-<%- include('./partials/gameHeader') %> 
-<p>
-  def function3(param):<br />
-    &emsp; mapping = {base64.b64encode(k.encode()).decode(): v for k, v in {<br />
-        &emsp; &emsp; "Vk9LMA==": "0x3A7E",<br />
-        &emsp; &emsp; "dummy1": "RandomValue1",<br />
-        &emsp; &emsp; "dummy2": "RandomValue2"<br />
-    &emsp; }.items()}<br />
-    &emsp; return mapping.get(param, mapping["missing"])  # KeyError<br />
-
-</p>
-        <div>
+<%- include('./partials/gameHeader',{roundNumber:3}) %> 
+          <div class="bg-gray-950 flex items-center justify-center rounded-lg ">
+            <pre>
+              <code class="text-green-500 text-sm m-0">
+                def function3(param):
+                &emsp; mapping = {base64.b64encode(k.encode()).decode(): v for k, v in {
+                &emsp; &emsp; "Vk9LMA==": "0x3A7E",
+                &emsp; &emsp; "dummy1": "RandomValue1",
+                &emsp; &emsp; "dummy2": "RandomValue2"
+                &emsp; }.items()}
+                &emsp; return mapping.get(param, mapping["missing"])  
+              </code>
+            </pre>
+          </div>
+          <div class="flex justify-center items-center mb-2">
           <form>
-            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required>
+            <input type="text" placeholder="Enter the secret code here:" name="secretCode" required class="rounded-lg w-[220px] text-black font-bold p-1 py-1 m-1 bg-slate-200">
             <input type="hidden" name="codeId" value="3">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="text-white bg-indigo-400 mx-2 p-2 rounded-lg">
           </form>
         </div>
+      </div>
       </main>
     </div>
   </body>
